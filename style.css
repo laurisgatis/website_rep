@@ -1,15 +1,25 @@
 /* === General body & container === */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* more robust, modern font */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: #ffffff;
     color: #222;
-    margin: 0;
     line-height: 1.6;
+
+    display: flex;              /* enables flexible layout */
+    flex-direction: column;     /* stack elements vertically */
+    min-height: 100vh;          /* full viewport height */
 }
 
 .container {
-    max-width: 1200px; /* wider */
-    margin: 0 auto; /* centers container */
+    flex: 1;                 /* pushes footer down */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;          /* center horizontally only */
     padding: 20px;
 }
 
