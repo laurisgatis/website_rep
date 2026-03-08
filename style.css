@@ -34,6 +34,7 @@ header .tagline {
 
 nav {
     display: flex;                  /* ensure nav links are inline */
+    align-items: center;  /* ensures all nav items, including dropdown, align vertically */
     gap: 8px;                       /* space between buttons */
 }
 
