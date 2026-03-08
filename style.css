@@ -1,8 +1,10 @@
+/* === General body & container === */
 body {
     font-family: Georgia, serif;
     background: #ffffff;
     color: #222;
     margin: 0;
+    line-height: 1.6;
 }
 
 .container {
@@ -11,46 +13,88 @@ body {
     padding: 20px;
 }
 
-h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+/* === Header === */
+header {
+    background-color: #4a90e2; /* header color */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #357ABD;
 }
 
-.tagline {
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header .tagline {
     font-size: 18px;
-    color: #666;
+    color: #f0f0f0;
+    margin-top: 10px;
+}
+
+/* === Navigation menu === */
+nav {
+    text-align: center;
     margin-bottom: 40px;
 }
 
+nav a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4a90e2;
+    border: 1px solid #4a90e2;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* === Section headings === */
 h2 {
     margin-top: 40px;
     font-size: 22px;
 }
 
-p {
+/* === Paragraphs and lists === */
+p, ul {
     line-height: 1.6;
 }
 
-ul {
-    line-height: 1.6;
-}
-
+/* === Buttons === */
 .button {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 16px;
-    border: 1px solid #333;
     text-decoration: none;
-    color: #333;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 4px;
+    transition: background 0.2s;
 }
 
 .button:hover {
-    background: #333;
-    color: white;
+    background-color: #357ABD;
 }
 
+/* === Footer === */
 footer {
+    text-align: center;
+    background-color: #222;
+    color: #eee;
+    padding: 20px 10px;
     margin-top: 60px;
+    border-top: 2px solid #444;
     font-size: 14px;
-    color: #777;
+}
+
+/* === Optional: section spacing === */
+section {
+    margin-bottom: 30px;
 }
