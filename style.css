@@ -15,46 +15,41 @@ body {
 
 /* === Header === */
 header {
-    display: flex;                /* flex layout for horizontal alignment */
+    display: flex;                  /* enables horizontal layout */
     justify-content: space-between; /* title left, nav right */
-    align-items: center;           /* vertical centering */
-    background-color: #ffffff;     /* keep neutral background */
-    color: #333333;                /* grayish-black title */
-    padding: 20px 20px;
+    align-items: center;            /* vertically center title and nav */
+    background-color: #ffffff;
+    padding: 20px;
     border-bottom: 2px solid #ddd;
 }
 
-/* Title */
 header h1 {
     font-size: 2em;
     margin: 0;
 }
 
-/* Remove tagline */
 header .tagline {
-    display: none;
+    display: none;                  /* remove tagline */
 }
 
-/* === Navigation menu === */
 nav {
-    margin: 0;          /* remove vertical spacing */
+    display: flex;                  /* ensure nav links are inline */
+    gap: 8px;                       /* space between buttons */
 }
 
 nav a {
-    display: inline-block;
-    margin-left: 8px;          /* spacing between buttons */
     padding: 8px 16px;
     text-decoration: none;
-    color: #333333;            /* gray text */
-    background-color: transparent; /* transparent background */
-    border: 1px solid #ccc;    /* light gray border */
-    border-radius: 0;          /* square buttons */
+    color: #333333;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0;               /* square buttons */
     transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
-    background-color: #eee;    /* light gray on hover */
-    color: #222;               /* darker text on hover */
+    background-color: #eee;
+    color: #222;
 }
 
 /* === Section headings === */
