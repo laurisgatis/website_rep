@@ -15,15 +15,18 @@ body {
 
 /* === Header === */
 header {
-    background-color: #ffffff; /* keep neutral background */
-    color: #333333; /* grayish-black */
-    padding: 20px 20px; /* half the previous padding */
-    text-align: left; /* align title to the left */
-    border-bottom: 2px solid #ddd; /* subtle bottom border */
+    display: flex;                /* flex layout for horizontal alignment */
+    justify-content: space-between; /* title left, nav right */
+    align-items: center;           /* vertical centering */
+    background-color: #ffffff;     /* keep neutral background */
+    color: #333333;                /* grayish-black title */
+    padding: 20px 20px;
+    border-bottom: 2px solid #ddd;
 }
 
+/* Title */
 header h1 {
-    font-size: 2em; /* smaller than before */
+    font-size: 2em;
     margin: 0;
 }
 
@@ -34,26 +37,24 @@ header .tagline {
 
 /* === Navigation menu === */
 nav {
-    text-align: left; /* align menu left */
-    margin-top: 10px; /* reduce space above nav */
-    margin-bottom: 30px;
+    margin: 0;          /* remove vertical spacing */
 }
 
 nav a {
     display: inline-block;
-    margin: 0 8px 0 0; /* space between buttons */
+    margin-left: 8px;          /* spacing between buttons */
     padding: 8px 16px;
     text-decoration: none;
-    color: #ffffff; /* button text color */
-    background-color: #4a90e2; /* button background */
-    border: none;
-    border-radius: 0; /* square buttons */
+    color: #333333;            /* gray text */
+    background-color: transparent; /* transparent background */
+    border: 1px solid #ccc;    /* light gray border */
+    border-radius: 0;          /* square buttons */
     transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
-    background-color: #357ABD;
-    color: white;
+    background-color: #eee;    /* light gray on hover */
+    color: #222;               /* darker text on hover */
 }
 
 /* === Section headings === */
