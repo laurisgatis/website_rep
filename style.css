@@ -54,9 +54,9 @@ nav a:hover {
 
 /* === Dropdown for Projects menu === */
 .dropdown {
-    display: inline-block;
-    position: relative;
-    align-items: middle;
+    display: flex;          /* make container a flex container */
+    align-items: center;    /* vertically center the drop button */
+    height: 100%;           /* inherit height from nav */
 }
 
 .dropdown-content {
@@ -88,12 +88,16 @@ nav a:hover {
 }
 
 .dropbtn {
+    display: inline-block;  /* same as normal nav links */
     padding: 8px 16px;
     color: #333;
     background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 0;
     text-decoration: none;
+    line-height: normal;    /* ensure vertical alignment */
+    height: 100%;           /* match height of nav bar */
+    box-sizing: border-box; /* include padding in height */
 }
 
 .dropbtn:hover {
