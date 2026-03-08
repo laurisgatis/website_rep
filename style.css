@@ -1,6 +1,6 @@
 /* === General body & container === */
 body {
-    font-family: Georgia, serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* more robust, modern font */
     background: #ffffff;
     color: #222;
     margin: 0;
@@ -8,51 +8,51 @@ body {
 }
 
 .container {
-    max-width: 700px;
-    margin: 80px auto;
+    max-width: 1200px; /* wider */
+    margin: 0 auto; /* centers container */
     padding: 20px;
 }
 
 /* === Header === */
 header {
-    background-color: #4a90e2; /* header color */
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #357ABD;
+    background-color: #ffffff; /* keep neutral background */
+    color: #333333; /* grayish-black */
+    padding: 20px 20px; /* half the previous padding */
+    text-align: left; /* align title to the left */
+    border-bottom: 2px solid #ddd; /* subtle bottom border */
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 2em; /* smaller than before */
     margin: 0;
 }
 
+/* Remove tagline */
 header .tagline {
-    font-size: 18px;
-    color: #f0f0f0;
-    margin-top: 10px;
+    display: none;
 }
 
 /* === Navigation menu === */
 nav {
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: left; /* align menu left */
+    margin-top: 10px; /* reduce space above nav */
+    margin-bottom: 30px;
 }
 
 nav a {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 8px 0 0; /* space between buttons */
     padding: 8px 16px;
     text-decoration: none;
-    color: #4a90e2;
-    border: 1px solid #4a90e2;
-    border-radius: 4px;
+    color: #ffffff; /* button text color */
+    background-color: #4a90e2; /* button background */
+    border: none;
+    border-radius: 0; /* square buttons */
     transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
-    background-color: #4a90e2;
+    background-color: #357ABD;
     color: white;
 }
 
@@ -67,7 +67,7 @@ p, ul {
     line-height: 1.6;
 }
 
-/* === Buttons === */
+/* === Buttons (like GitHub link) === */
 .button {
     display: inline-block;
     margin-top: 15px;
@@ -75,7 +75,7 @@ p, ul {
     text-decoration: none;
     background-color: #4a90e2;
     color: white;
-    border-radius: 4px;
+    border-radius: 0; /* square buttons */
     transition: background 0.2s;
 }
 
@@ -85,16 +85,18 @@ p, ul {
 
 /* === Footer === */
 footer {
+    width: 100%; /* full width */
     text-align: center;
-    background-color: #222;
+    background-color: #222; /* dark background */
     color: #eee;
-    padding: 20px 10px;
-    margin-top: 60px;
+    padding: 20px 0;
     border-top: 2px solid #444;
-    font-size: 14px;
+    position: relative; /* ensures it stays below content */
+    bottom: 0;
+    left: 0;
 }
 
-/* === Optional: section spacing === */
+/* === Sections spacing === */
 section {
     margin-bottom: 30px;
 }
