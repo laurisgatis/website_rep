@@ -52,6 +52,53 @@ nav a:hover {
     color: #222;
 }
 
+/* === Dropdown for Projects menu === */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;  /* hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {
+    background-color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;  /* show only on hover */
+}
+
+.dropbtn {
+    padding: 8px 16px;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.dropbtn:hover {
+    background-color: #eee;
+}
+
 /* === Section headings === */
 h2 {
     margin-top: 40px;
