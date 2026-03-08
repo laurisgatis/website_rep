@@ -1,0 +1,56 @@
+body {
+    font-family: Georgia, serif;
+    background: #ffffff;
+    color: #222;
+    margin: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+}
+
+.button:hover {
+    background: #333;
+    color: white;
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #777;
+}
