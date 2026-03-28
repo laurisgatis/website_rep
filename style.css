@@ -356,3 +356,64 @@ span[title]:hover {
 .site-title-link:hover {
     color: inherit;
 }
+
+/* =========================
+   Article cards
+========================= */
+
+#projects {
+  margin-top: 3rem;
+}
+
+.article-card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 850px;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.article-card img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.article-card-content {
+  padding: 1rem 1.2rem 1rem 0;
+}
+
+.article-date {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.article-card h3 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.35rem;
+}
+
+.article-description {
+  margin: 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.article-image-large {
+    max-width: 420px;
+}
