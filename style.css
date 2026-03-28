@@ -34,12 +34,20 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin: 0;
+    font-weight: 400;   /* lighter base weight */
+    color: #777;        /* gray title */
+}
+
+/* Highlight "Small Data" */
+header h1 .emphasis {
+    font-weight: 700;
+    color: #111;        /* darker gray / near black */
 }
 
 header .tagline {
-    display: none;                  /* remove tagline */
+    display: none;      /* remove tagline */
 }
 
 nav {
@@ -157,4 +165,64 @@ footer {
 /* === Sections spacing === */
 section {
     margin-bottom: 30px;
+}
+
+/* === Section heading === */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+.section-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.section-link:hover {
+    color: #222;
+}
+
+/* === Insights === */
+.insight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.insight-card {
+    padding: 18px 20px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.insight-card h3 {
+    margin: 4px 0 8px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.insight-card h3 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.insight-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.insight-meta {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.insight-card p {
+    margin: 0;
+    color: #555;
 }
