@@ -249,7 +249,7 @@ section {
 .article-text p {
     margin-bottom: 25px;
     line-height: 2;
-    text-indent: 40px;
+    text-indent: 0;
 }
 
 section a {
@@ -378,6 +378,7 @@ span[title]:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   max-width: 850px;
+  margin: 0 auto
 }
 
 .article-card:hover {
